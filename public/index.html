@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCtYHpUoZOEhq9QykeS6FlhxNF9xpmnq2g",
+        authDomain: "milestone-2-20a5e.firebaseapp.com",
+        databaseURL: "https://milestone-2-20a5e.firebaseio.com",
+        storageBucket: "milestone-2-20a5e.appspot.com",
+        messagingSenderId: "9800798893"
+    };
+    firebase.initializeApp(config);
+</script>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Firebase Hosting</title>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+  <form action="action_page.php">
+    <nav class="imgcontainer">
+      <img class="imgcontainer" src="./images/quiz.png" alt="QUIZ" >
+    </nav>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+    <br>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+
+    <script src="./js/game.js"></script>
+  </body>
+</html>
